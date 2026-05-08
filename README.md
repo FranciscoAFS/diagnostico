@@ -99,8 +99,6 @@ Aplicación web full-stack para la gestión de productos. Permite crear, leer, a
 
    El frontend estará disponible en `http://localhost:5173`
 
-## 📸 Evidencias y Capturas de Pantalla
-
 
 ## Uso de Inteligencia Artificial
 
