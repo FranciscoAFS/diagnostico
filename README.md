@@ -42,43 +42,60 @@ Aplicación web full-stack para la gestión de productos. Permite crear, leer, a
 ### Configuración del Backend
 
 1. **Navega al directorio del backend:**
+   ```bash
    cd backend
-
-2. **Crea un entorno virtual:**
+   ```
+   
+3. **Crea un entorno virtual:**
+   ```bash
    python -m venv venv
    source venv/bin/activate  # En Windows: venv\Scripts\activate
+   ```
    
-3. **Instala las dependencias:**
+4. **Instala las dependencias:**
+   ```bash
    pip install -r requirements.txt
+   ```
 
-4. **Configura las variables de entorno:**
+6. **Configura las variables de entorno:**
    Crea un archivo `.env` en la carpeta `backend/`:
-   DEBUG=True
+   ```
    SECRET_KEY=django-insecure-m#wgv(u!dmr4v1i8ddc(trjgrk5th@4fqhfn-sm_^-=gl7@q!*
    DB_NAME=diagnostico
    DB_USER=tu_usuario
    DB_PASSWORD=tu_contraseña
    DB_HOST=localhost
    DB_PORT=3306
+   ```
 
-5. **Ejecuta las migraciones:**
+8. **Ejecuta las migraciones:**
+   ```bash
    python manage.py migrate
+   ```
 
-6. **Inicia el servidor de desarrollo:**
+10. **Inicia el servidor de desarrollo:**
+   ```bash
    python manage.py runserver
+   ```
 
    El backend estará disponible en `http://localhost:8000`
 
 ### Configuración del Frontend
 
 1. **En otra terminal, navega al directorio del frontend:**
+   ```bash
    cd frontend/diagnostico
+   ```
 
-2. **Instala las dependencias:**
+3. **Instala las dependencias:**
+   ```bash
    npm install
+   ```
 
-3. **Inicia el servidor de desarrollo:**
+5. **Inicia el servidor de desarrollo:**
+   ```bash
    npm run dev
+   ```
 
    El frontend estará disponible en `http://localhost:5173`
 
@@ -94,8 +111,9 @@ Se utilizó **GitHub Copilot** para:
 - Implementación de validaciones de formularios
 
 ## API Endpoints
-
+```
 GET    /api/producto/         - Obtener todos los productos
 POST   /api/producto/         - Crear un nuevo producto
 PUT    /api/producto/{id}/    - Actualizar un producto
 DELETE /api/producto/{id}/    - Eliminar un producto
+```
