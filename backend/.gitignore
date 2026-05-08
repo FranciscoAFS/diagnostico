@@ -1,0 +1,17 @@
+.env
+initialdata/entrypoint.sh
+
+static/*
+
+venv
+
+*.pyc
+*.pyo
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+logs/*
+
+media/*
